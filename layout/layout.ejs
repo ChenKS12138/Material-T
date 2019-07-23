@@ -32,6 +32,10 @@
         <div class="mask rgba-black-light flex-center">
         <div class="container text-center white-text wow fadeInUp">
             <p class="h2"><%- subtitle %></p>
+            <% if(is_home()) { %>
+              <p style="font-size: 25px;color:white;margin-bottom:1rem">今日Bing美图</p>
+              <iframe id="data" src="http://47.106.250.72:8081/info" width="750" height="30" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+            <% } %>
             <br>
             <% if(is_post()) { %>
             <p><%- full_date(page.date, 'dddd, MMMM Do YYYY, h:mm a') %></p>

@@ -8,7 +8,7 @@
 # 全局
 # Site
 #---------------------------
-favicon: /favicon.png
+favicon: https://avatars0.githubusercontent.com/u/42082890?s=460&v=4
 apple_touch_icon: /apple-touch-icon.png
 
 
@@ -17,7 +17,7 @@ apple_touch_icon: /apple-touch-icon.png
 # Index Page
 #---------------------------
 index: 
-  banner_img: https://i.imgur.com/OLJxbaR.jpg
+  banner_img: http://47.106.250.72:8081
   banner_img_height: 100  # available: 0 - 100
   subtitle:
     enable: true
@@ -45,13 +45,13 @@ navbar:
 # Post Page
 #---------------------------
 post: 
-  banner_img: https://i.imgur.com/oADD1Ip.jpg
-  banner_img_height: 70  # available: 0 - 100
+  banner_img: http://47.106.250.72:8081/static/FNwWK1Y.jpg
+  banner_img_height: 40  # available: 0 - 100
   toc: 
     enable: true
   highlight:
     enable: true
-    theme: tomorrow-night-eighties # available: github | tomorrow | tomorrow-night | tomorrow-night-eighties
+    theme: tomorrow-night # available: github | tomorrow | tomorrow-night | tomorrow-night-eighties
   copyright:
     enable: true
     content: 本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC">CC BY-SA 3.0协议</a> 。转载请注明出处！
@@ -83,19 +83,23 @@ valine:
 # Archive Page
 #---------------------------
 archive: 
-  banner_img: https://i.imgur.com/FNwWK1Y.jpg
-  banner_img_height: 80  # available: 0 - 100
+  banner_img: http://47.106.250.72:8081/static/OLJxbaR.jpg
+  banner_img_height: 50  # available: 0 - 100
 
 #---------------------------
 # 关于页
 # About Page
 #---------------------------
 about:
-  banner_img: https://i.imgur.com/rVtDsho.png
+  banner_img: http://47.106.250.72:8081/static/rVtDsho.png
   banner_img_height: 80  # available: 0 - 100
-  avatar: https://i.imgur.com/ME3xK6V.jpg
-  name: myname
-  introduce: info / info / info
+  avatar: https://avatars0.githubusercontent.com/u/42082890?s=460&v=4
+  name: ChenKS
+  introduce: >
+    一个热爱技术的大学生，青柚工作室成员，南邮校科协成员。<br/><br/>
+    Enjoy JavaScript.  <br/><br/>
+    Enjoy Coding.<br/><br/>
+
   icons: 
-    github: https://github.com
-    twitter: https://twitter.com
+    github: https://github.com/ChenKS12138
+    twitter: hhttps://twitter.com/ChenKS12138
