@@ -16,20 +16,19 @@
                 <% if(theme.post.copyright.enable) { %>
                     <p class="note note-warning"><%- theme.post.copyright.content %></p>
                 <% } %>
+                <!-- Comments -->
+                <div class="comments" id="comments">
+                    <% if(theme.post.comments.enable) { %>
+                        <% var type = '_partial/comments/' + theme.post.comments.type %>
+                        <%- partial(type) %>
+                    <% } %> 
+                </div>      
             </div>
         </div>
         <div class="d-none d-md-block col-md-2">
             <%- partial('_partial/toc') %>
         </div>
-    </div>        
+    </div>
 </div>
 
 <br><br><br>
-
-<!-- Comments -->
-<div class="comments" id="comments">
-<% if(page.comments && theme.post.comments.enable) { %>
-    <% var type = '_partial/comments/' + theme.post.comments.type %>
-    <%- partial(type) %>
-<% } %> 
-</div>

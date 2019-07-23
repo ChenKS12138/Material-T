@@ -18,12 +18,12 @@ apple_touch_icon: /apple-touch-icon.png
 #---------------------------
 index: 
   banner_img: https://open.saintic.com/api/bingPic/
-  banner_img_height: 100  # available: 0 - 100
+  banner_img_height: 90  # available: 0 - 100
   subtitle:
     enable: true
   auto_excerpt:
     enable: true
-    length: 300
+    length: 150
   post_url_target: _self  # available: _blank | _self
   post_info:
     enable: true
@@ -56,18 +56,18 @@ post:
     enable: true
     content: 本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC">CC BY-SA 3.0协议</a> 。转载请注明出处！
   comments: 
-    enable: false
-    type: disqus  # available: disqus | valine
+    enable: true
+    type: gitalk  # available: disqus | valine | gitalk
 
 # Disqus
 disqus:
-  shortname: # your shortname
+  shortname: your shortname
 
 # Valine
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version.
   appid:  # your leancloud application appid
   appkey:  # your leancloud application appkey
   notify: false # mail notifier, See: https://github.com/xCss/Valine/wiki
@@ -77,6 +77,13 @@ valine:
   pageSize: 10 # pagination size
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
 
+gitalk:
+  enable: true
+  client_id: 95045c96cac4aee7617c
+  client_secret: 12068d27e46e868ed7300953ef0a925f4fd682c4
+  repo: ChenKS12138.github.io
+  owner: ChenKS12138
+  admin: ChenKS
 
 #---------------------------
 # 归档页
