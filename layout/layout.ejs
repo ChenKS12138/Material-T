@@ -34,7 +34,17 @@
             <p class="h2"><%- subtitle %></p>
             <% if(is_home()) { %>
               <p style="font-size: 25px;color:white;margin-bottom:1rem">今日Bing美图</p>
-              <iframe id="data" src="http://47.106.250.72:8081/info" width="750" height="30" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+              <p id="desc" style="font-size: 20px;color:white;margin-bottom:1rem;max-width:80%;text-align:center;margin: 0 auto;">loading...</p>
+              <script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+              <script>
+                $.ajax({
+                  method:'get',
+                  url:'https://jsonp.afeld.me/?url=http%3A%2F%2Fcn.bing.com%2FHPImageArchive.aspx%3Fformat%3Djs%26idx%3D0%26n%3D1',
+                  success:function(data){
+                    document.querySelector("#desc").innerHTML=data.images[0].copyright;
+                  }
+                })
+              </script>
             <% } %>
             <br>
             <% if(is_post()) { %>

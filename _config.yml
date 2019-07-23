@@ -17,7 +17,7 @@ apple_touch_icon: /apple-touch-icon.png
 # Index Page
 #---------------------------
 index: 
-  banner_img: http://47.106.250.72:8081
+  banner_img: https://open.saintic.com/api/bingPic/
   banner_img_height: 100  # available: 0 - 100
   subtitle:
     enable: true
